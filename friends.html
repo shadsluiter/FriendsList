@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friends Directory</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/friends.css">
+
+</head>
+<body>
+
+<h2>Orders</h2>
+<ul id="friends">
+</ul>
+
+<template id="friend-template">
+	<li data-id= {{id}}>
+		<p>
+			<strong>name:</strong>
+			<span class="noedit name">{{name}}</span>
+			<input class="edit name"/>
+		</p>
+		<p>
+			<strong>age: </strong>
+			<span class="noedit age">{{age}}</span>
+			<input class="edit age"/>
+		</p>
+		<p>
+
+				<button class="editfriend noedit">Edit</button>
+				<button class="canceledit edit">Cancel</button>
+				<button class="saveedit edit">Save</button>
+				<button class='remove' data-id='{{id}}'>Del</button>
+
+
+
+		</p>
+	</li>
+</template>
+
+
+	<h4>Add a friend</h4>
+	<p>name: <input type="text" id="name"></p>
+	<p>age: <input type="text" id="age"></p>
+	<button id="add-friend">Add Friend</button>
+
+	<button id="show-friends">Show Friends</button>
+
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+	<script src="js/friends.js"></script>
+	<script src="node_modules/mustache/mustache.min.js"></script>
+
+	</body>
+</html>

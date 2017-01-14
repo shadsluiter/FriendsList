@@ -1,0 +1,27 @@
+body {
+	margin:1rem;
+}
+
+li {
+	text-decoration: none;
+	background: #ccc;
+	padding: 0.5rem;
+	border: 1 solid black;
+	border-radius: 5px;
+	list-style: none;
+	margin: 1rem;
+}
+
+
+ul li .edit {
+	display:none;
+}
+
+
+ul li.edit .edit {
+	display:initial;
+}
+
+ul li.edit .noedit {
+	display:none;
+}
